@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="@dimen/_4sdp"
-    android:padding="@dimen/_8sdp"
+    android:padding="@dimen/_12sdp"
     android:background="@drawable/background_item"
     app:ripple_for_constraint="true">
 
@@ -13,14 +13,15 @@
         android:id="@+id/radio_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:buttonTint="@color/mc_green"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <ImageView
         android:id="@+id/version_icon"
-        android:layout_width="@dimen/_36sdp"
-        android:layout_height="@dimen/_36sdp"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
         android:layout_marginStart="@dimen/_8sdp"
         android:scaleType="centerInside"
         android:src="@drawable/ic_minecraft"
@@ -32,7 +33,7 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/favorite"
@@ -50,12 +51,16 @@
             android:scrollHorizontally="true"
             android:singleLine="true"
             android:text="Title"
+            android:textColor="@color/mc_text_primary"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
             tools:ignore="HardcodedText" />
 
         <com.google.android.flexbox.FlexboxLayout
             android:id="@+id/version_info_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
             android:orientation="horizontal"
             app:flexDirection="row"
             app:flexWrap="wrap"
@@ -66,13 +71,13 @@
 
     <ImageButton
         android:id="@+id/favorite"
-        android:layout_width="@dimen/_28sdp"
-        android:layout_height="@dimen/_28sdp"
-        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:padding="@dimen/_4sdp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
         android:src="@drawable/ic_favorite"
+        app:tint="@color/mc_text_secondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/operate"
         app:layout_constraintTop_toTopOf="parent"
@@ -80,13 +85,13 @@
 
     <ImageButton
         android:id="@+id/operate"
-        android:layout_width="@dimen/_28sdp"
-        android:layout_height="@dimen/_28sdp"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:padding="@dimen/_4sdp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:scaleType="centerCrop"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
+        android:scaleType="centerInside"
         android:src="@drawable/ic_more"
+        app:tint="@color/mc_text_secondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

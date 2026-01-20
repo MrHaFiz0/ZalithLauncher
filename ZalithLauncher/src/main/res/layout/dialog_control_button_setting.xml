@@ -452,6 +452,129 @@
             android:text="@string/controls_in_menu"
             app:layout_constraintTop_toBottomOf="@+id/visibility_game_checkbox" />
 
+        <!-- BUTTON STYLE SECTION -->
+        <TextView
+            android:id="@+id/editButtonStyle_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="@string/customctrl_button_style"
+            android:textColor="@color/mc_text_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/visibility_menu_checkbox" />
+
+        <Spinner
+            android:id="@+id/editButtonStyle_spinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@drawable/background_edit_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editButtonStyle_textView" />
+
+        <!-- CUSTOM ICON SECTION -->
+        <TextView
+            android:id="@+id/editCustomIcon_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="@string/customctrl_custom_icon"
+            android:textColor="@color/mc_text_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editButtonStyle_spinner" />
+
+        <LinearLayout
+            android:id="@+id/editCustomIcon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/editCustomIcon_textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/editCustomIcon_preview"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/mc_card_background"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_add" />
+
+            <com.movtery.zalithlauncher.ui.view.AnimButton
+                android:id="@+id/editCustomIcon_selectButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="@string/customctrl_select_icon"
+                android:textColor="@color/mc_text_primary" />
+
+            <ImageButton
+                android:id="@+id/editCustomIcon_clearButton"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_close"
+                app:tint="@color/mc_text_secondary" />
+
+        </LinearLayout>
+
+        <!-- TEXT COLOR SECTION -->
+        <fr.spse.extended_view.ExtendedTextView
+            android:id="@+id/editTextColor_textView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableEnd="@drawable/ic_spinner_arrow_right"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="@string/customctrl_text_color"
+            android:textColor="@color/mc_text_primary"
+            app:drawableEndIntegerScaling="true"
+            app:drawableEndSize="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editCustomIcon_layout" />
+
+        <!-- FONT SIZE SECTION -->
+        <TextView
+            android:id="@+id/editFontSize_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="@string/customctrl_font_size"
+            android:textColor="@color/mc_text_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextColor_textView" />
+
+        <SeekBar
+            android:id="@+id/editFontSize_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_36sdp"
+            android:max="48"
+            android:progress="12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editFontSize_textView" />
+
+        <TextView
+            android:id="@+id/editFontSize_textView_value"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="12sp"
+            android:textColor="@color/mc_text_secondary"
+            app:layout_constraintBottom_toBottomOf="@id/editFontSize_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/editFontSize_textView" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.kdt.DefocusableScrollView>

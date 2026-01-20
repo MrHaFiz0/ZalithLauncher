@@ -70,6 +70,10 @@ public class ControlData {
     public boolean isSwipeable;
     public boolean displayInGame;
     public boolean displayInMenu;
+    public String iconPath;      //Custom icon path, null for no custom icon
+    public int buttonStyle;      //Button style: 0=default, 1=rounded, 2=circle, 3=minecraft
+    public int textColor;        //Text color, default white (0xFFFFFFFF)
+    public float fontSize;       //Font size in sp, default 12f
     private float width;         //Dp instead of Px now
     private float height;        //Dp instead of Px now
 
@@ -114,10 +118,14 @@ public class ControlData {
     }
 
     public ControlData(String name, int[] keycodes, String dynamicX, String dynamicY, float width, float height, boolean isToggle) {
-        this(name, keycodes, dynamicX, dynamicY, width, height, isToggle, 1, 0x4D000000, 0xFFFFFFFF, 0, 0, true, true, false, false);
+        this(name, keycodes, dynamicX, dynamicY, width, height, isToggle, 1, 0x4D000000, 0xFFFFFFFF, 0, 0, true, true, false, false, null, 0, 0xFFFFFFFF, 12f);
     }
 
     public ControlData(String name, int[] keycodes, String dynamicX, String dynamicY, float width, float height, boolean isToggle, float opacity, int bgColor, int strokeColor, float strokeWidth, float cornerRadius, boolean displayInGame, boolean displayInMenu, boolean isSwipable, boolean mousePassthrough) {
+        this(name, keycodes, dynamicX, dynamicY, width, height, isToggle, opacity, bgColor, strokeColor, strokeWidth, cornerRadius, displayInGame, displayInMenu, isSwipable, mousePassthrough, null, 0, 0xFFFFFFFF, 12f);
+    }
+
+    public ControlData(String name, int[] keycodes, String dynamicX, String dynamicY, float width, float height, boolean isToggle, float opacity, int bgColor, int strokeColor, float strokeWidth, float cornerRadius, boolean displayInGame, boolean displayInMenu, boolean isSwipable, boolean mousePassthrough, String iconPath, int buttonStyle, int textColor, float fontSize) {
         this.name = name;
         this.keycodes = inflateKeycodeArray(keycodes);
         this.dynamicX = dynamicX;
@@ -134,6 +142,10 @@ public class ControlData {
         this.displayInMenu = displayInMenu;
         this.isSwipeable = isSwipable;
         this.passThruEnabled = mousePassthrough;
+        this.iconPath = iconPath;
+        this.buttonStyle = buttonStyle;
+        this.textColor = textColor;
+        this.fontSize = fontSize;
     }
 
     //Deep copy constructor
@@ -154,7 +166,11 @@ public class ControlData {
                 controlData.displayInGame,
                 controlData.displayInMenu,
                 controlData.isSwipeable,
-                controlData.passThruEnabled
+                controlData.passThruEnabled,
+                controlData.iconPath,
+                controlData.buttonStyle,
+                controlData.textColor,
+                controlData.fontSize
         );
     }
 

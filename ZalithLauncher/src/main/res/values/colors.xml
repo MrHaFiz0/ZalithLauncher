@@ -1,42 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black_or_white">#000000</color>
+    <color name="black_or_white">#FFFFFF</color>
 
-    <color name="background_app">#BDD9DD</color>
-    <color name="background_app_error">#DDBDBD</color>
-    <color name="background_overlay">#CFCFCF</color>
-    <color name="background_status_bar">#EDEDED</color>
-    <color name="background_menu_top">#2D8B9C</color>
-    <color name="background_menu_top_error">#9C2D2D</color>
-    <color name="background_menu_element">#3299AB</color>
-    <color name="background_ripple_effect">#A6A6A6</color>
+    <!-- Minecraft Launcher Dark Theme Colors -->
+    <color name="background_app">#1E1E1E</color>
+    <color name="background_app_error">#3D1A1A</color>
+    <color name="background_overlay">#2D2D2D</color>
+    <color name="background_status_bar">#1A1A1A</color>
+    <color name="background_menu_top">#1A1A1A</color>
+    <color name="background_menu_top_error">#4A1515</color>
+    <color name="background_menu_element">#3C8527</color>
+    <color name="background_ripple_effect">#40FFFFFF</color>
 
-    <color name="button_background">#DDE0E1</color>
-    <color name="button_background_selected">#BFC7CA</color>
-    <color name="dialog_background">#F4F4F4</color>
+    <color name="button_background">#3A3A3A</color>
+    <color name="button_background_selected">#4A4A4A</color>
+    <color name="dialog_background">#252525</color>
 
-    <color name="menu_bar">#EBF4F3</color>
-    <color name="menu_bar_text">#EBF4F3</color>
-    <color name="menu_overlay">#BEFFFFFF</color>
-    <color name="menu_progress">#3FA3B5</color>
+    <color name="menu_bar">#2D2D2D</color>
+    <color name="menu_bar_text">#FFFFFF</color>
+    <color name="menu_overlay">#E6232323</color>
+    <color name="menu_progress">#3C8527</color>
 
-    <color name="background_item">#CCFFFFFF</color>
-    <color name="background_item_selected">#D8DEEEF1</color>
-    <color name="background_item_disabled">#D9FFDADA</color>
-    <color name="background_sponsor_intermediate">#CCFFCB8B</color>
-    <color name="background_sponsor_advanced">#CCFDA28A</color>
+    <color name="background_item">#CC2A2A2A</color>
+    <color name="background_item_selected">#E6363636</color>
+    <color name="background_item_disabled">#CC3D2222</color>
+    <color name="background_sponsor_intermediate">#80BD6C2D</color>
+    <color name="background_sponsor_advanced">#80B83C1F</color>
 
-    <color name="edit_box_fill">#E1EDEC</color>
-    <color name="edit_box_fill_selected">#D2E8E5</color>
+    <color name="edit_box_fill">#333333</color>
+    <color name="edit_box_fill_selected">#404040</color>
 
-    <color name="mod_category_fill">#80D1D1D1</color>
-    <color name="text_background_fill">#B3DEDEDE</color>
+    <color name="mod_category_fill">#80404040</color>
+    <color name="text_background_fill">#B3333333</color>
 
-    <color name="settings_category">#17958B</color>
+    <color name="settings_category">#4CAF50</color>
 
     <color name="favorite_color">#FA7C7C</color>
 
-    <color name="icon_color">#151515</color>
+    <color name="icon_color">#E0E0E0</color>
 
-    <color name="primary_text">#0E0E0E</color>
+    <color name="primary_text">#FFFFFF</color>
+
+    <!-- Minecraft Launcher Accent Colors -->
+    <color name="mc_green">#3C8527</color>
+    <color name="mc_green_light">#4C9A2A</color>
+    <color name="mc_green_pressed">#2F6B1F</color>
+    <color name="mc_green_disabled">#264D1A</color>
+
+    <!-- Surface Colors -->
+    <color name="mc_surface">#232323</color>
+    <color name="mc_surface_elevated">#2D2D2D</color>
+    <color name="mc_card">#2A2A2A</color>
+    <color name="mc_border">#3A3A3A</color>
+
+    <!-- Text Colors -->
+    <color name="mc_text_primary">#FFFFFF</color>
+    <color name="mc_text_secondary">#B0B0B0</color>
+    <color name="mc_text_muted">#808080</color>
+
+    <!-- Play Button Specific -->
+    <color name="play_button_background">#3C8527</color>
+    <color name="play_button_pressed">#2F6B1F</color>
+    <color name="play_button_text">#FFFFFF</color>
 </resources>
